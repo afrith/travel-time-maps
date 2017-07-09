@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Database name and username. If your database also needs a hostname or
 # password, you'll need to add those parameters to the commands below.
 DBNAME=traveltime
