@@ -6,7 +6,7 @@ CREATE TEMP TABLE connected_vertex (
 INSERT INTO connected_vertex (id)
 SELECT node
 FROM pgr_drivingDistance(
-    'select gid as id, source, target, 1 as cost, 1 as reverse_cost from ways',
+    'SELECT gid AS id, source, target, 1 AS cost, 1 AS reverse_cost FROM ways',
     (SELECT id FROM ways_vertices_pgr WHERE osm_id = 263568563),
     20000
 );
